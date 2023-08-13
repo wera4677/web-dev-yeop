@@ -6,20 +6,29 @@ body {
   ); /*그라데이션*/
   color: rgb(68, 68, 68);
 }
+#page-logo a {
+  color: rgb(183,230,235);
+}
 header {
   position: static; /*기본값*/
+}
+header a {
+  color: rgb(183,230,235);
+}
+header nav a:hover {
+  background-color: rgb(183,230,235);
+  color: rgb(59,59,59);
 }
 main ul {
   width: 1200px; /*구간조정*/
   margin: 0 auto 48px auto; /*중심맞추기*/
   /* flex-wrap: wrap;플렉스 박스 양옆에두기 */
-  display: grid;/*그리드 구조*/
-  grid-template-columns: 1fr 1fr;/*열을 1대1비율로 만듬*/
-  gap: 20px 20px;/*열과 행 사이의 간격*/
-
+  display: grid; /*그리드 구조*/
+  grid-template-columns: 1fr 1fr; /*열을 1대1비율로 만듬*/
+  gap: 20px 20px; /*열과 행 사이의 간격*/
 }
 li:nth-of-type(3) {
-  grid-column: 1/3;/*12F 그리드 숫자 지정해서 지정가능*/
+  grid-column: 1/3; /*12F 그리드 숫자 지정해서 지정가능*/
 }
 
 main li {
@@ -28,7 +37,6 @@ main li {
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /*그림자*/
   border-radius: 6px;
   overflow: hidden; /*튀어나온 모서리를 둥굴게 해줌*/
-  
 }
 
 main li img {
@@ -41,6 +49,9 @@ main li img {
   display: flex;
   flex-direction: column; /*플렉스 박스를 밑으로 내림*/
   justify-content: space-between; /*각각 공간확보*/
+}
+.item-content h2 {
+  margin: 0;
 }
 .actions {
   text-align: right;
