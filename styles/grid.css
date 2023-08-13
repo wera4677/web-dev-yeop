@@ -1,0 +1,31 @@
+main {
+  background-color: rgb(82, 23, 81);
+  padding: 10px;
+  width: 1000px;
+  margin: auto;
+}
+
+ul {
+  background-color: rgb(250, 146, 63);
+  list-style: none;
+  width: 800px;
+  margin: 10px auto;
+  padding: 10px;
+  display: grid;/*2차원 열 만들기가능*/
+  grid-template-columns: 1fr 1fr ;/*(비율) 사전에 어떤식으로 모양을만들지 결정가능*/
+  gap: 100px 200px;/*맨앞 행과 맨앞 열의 틈을 정함*/
+}
+
+li {
+  background-color: rgb(238, 212, 192);
+  text-align: center;
+  width: 200px;
+  margin: 20px auto;
+}
+/* li:first-of-type {
+  background-color: yellow;
+} */
+li:nth-of-type(3) {/*n번째에 오는 요소 바꾸기*/
+  background-color: yellow;
+  grid-column:1 / 3;/*첫번째열부터 3번째 열까지 span을 추가해서 설정도 가능*/
+}

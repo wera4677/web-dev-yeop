@@ -1,0 +1,43 @@
+html {
+  margin: 50px;
+}
+div {
+  background-color: #c7c7c7;
+  padding: 20px;
+  text-align: center;
+}
+
+p {
+  color: black;
+  padding: 50px;
+  margin: 0;
+}
+
+#container {
+  background-color: #521751;
+  position: relative;
+}
+
+#container p {
+  color: white;
+}
+
+#one {
+  background-color: #943092;
+}
+
+#two {
+  background-color: #c95bc7;
+  position: absolute; /*박스 흐름에서 빠짐*/
+  /* position: fixed;스크롤 내려도 같이내려옴 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: content-box;/*너비와 높이 계산하는방법 설정*/
+  
+
+}
+
+#three {
+  background-color: #dd61db;
+}

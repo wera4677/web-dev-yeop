@@ -1,0 +1,35 @@
+#container {
+  background-color: rgb(82, 23, 81);
+  padding: 10px;
+  width: 600px;
+  display: flex; /*왼쪽으로 박스 통합시킴
+  /*flex-direction: row;/*공간에 맞게 늘리거나 축소 함*/
+  /*순서도 바꿀수있음
+  flex-wrap: nowrap;/*창줄여도 그대로 /(wrap)창크기에따라 바꿈*/
+  align-items: center; /*중간배치*/
+  justify-content: space-between; /*박스 중간에 공간확보*/
+
+}
+
+p {
+  background-color: rgb(211, 88, 209);
+  margin: 10px;
+  width: 250px;
+}
+
+ul {
+  background-color: rgb(250, 146, 63);
+  list-style: none;
+  width: 250px;
+  margin: 10px;
+  padding: 0;
+  display: flex;
+  justify-content:flex-end;
+}
+
+
+li {
+  background-color: rgb(238, 212, 192);
+  width: 100px;
+  text-align: right;
+}
